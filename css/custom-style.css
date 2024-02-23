@@ -1,0 +1,451 @@
+body {
+    background: #fff;
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    overflow-x: hidden;
+    min-height: 2000px;
+    padding-top: 55px;
+}
+
+
+/*----------------------------------------
+FIXED NAVIGATION
+----------------------------------------*/
+
+.navbar-custom {
+    border: none;
+    margin-bottom: 0;
+    background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0px 40px 80px rgba(0,0,0,.1);
+}
+
+.navbar-custom .navbar-brand {
+    color: #666;
+    font-family: 'Times New Roman', serif;
+    font-weight: 100;
+    font-size: 24px;
+    letter-spacing: -1px;
+    margin-right: 50px;
+    padding-left: 50px;
+}
+
+.navbar-custom .navbar-brand:hover {
+    color: #222;
+}
+
+.navbar-custom .navbar-brand-zh {
+    color: #666;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 50px;
+    margin-right: 50px;
+    padding-left: 60px;
+}
+
+.navbar-custom .navbar-brand-zh:hover {
+    color: #222;
+    text-decoration: none;
+}
+  
+.navbar-custom .nav li a {
+    font-size: 12px;
+    font-weight: 100;
+    color: #777;
+    letter-spacing: 1px;
+    -webkit-transition: all ease-in-out .4s;
+    transition: all ease-in-out .4s;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-custom .navbar-nav li a:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 2px;
+    margin: auto;
+    background: transparent;
+    transition: width .4s ease, background-color .4s ease;
+}
+
+.navbar-custom .navbar-nav li a:hover:after,
+.navbar-custom .nav li.active > a:after {
+    background: #48c;
+    color: #fff;
+    width: 100%;
+}
+
+.navbar-custom .nav li.active > a {
+    background-color: transparent;
+    color: #000;
+}
+
+.navbar-custom .navbar-toggle {
+    border: none;
+    padding-top: 12px;
+    background-color: transparent;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background: #48c;
+    border-color: transparent;
+}
+
+/*@media (min-width: 767px) {
+
+    .navbar-custom.nav-shadow {
+        background: #fff;
+        box-shadow: 0px 40px 80px rgba(0,0,0,.1);
+    }
+
+}*/
+
+@media (max-width: 991px) {
+  
+    /*.navbar-custom {
+        background-color: #fff;
+        box-shadow: 0px 40px 80px rgba(0,0,0,.1);
+    }*/
+
+    .navbar-custom .navbar-brand {
+        padding-left: 20px;
+    }
+  
+    .navbar-custom .nav {
+        padding-bottom: 10px;
+    }
+  
+    .navbar-custom .nav li a {
+        display: inline-block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+  
+}
+
+/* Collapse on 991px */
+@media (max-width: 991px) {
+
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+}
+
+
+/*----------------------------------------
+HOME SECTION / END SECTION
+----------------------------------------*/
+
+.jumbotron.section-home {
+    height: 265px;
+    background-image: url(../images/bg-bigdata.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.jumbotron.section-end {
+    /*height: 100px;*/
+    height: 80px;
+    background-image: url(../images/bg-bigdata.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ddd;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.jumbotron.section-home #photo {
+    width: 170px;
+    height: 170px;
+    margin-left: 50px;
+    background-image: url(../images/photo.jpg);
+    background-position: 0% 35%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+}
+
+.jumbotron.section-home .container .row .col-sm-4 .name {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 10px;
+    padding-left: 50px;
+    margin-bottom: 0px;
+}
+
+.jumbotron.section-home .container .row .col-sm-4 .title1 {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 0px;
+    padding-left: 65px;
+    margin-bottom: 0px;
+}
+
+.jumbotron.section-home .container .row .col-sm-4 .title {
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 100;
+    padding-top: 0px;
+    padding-left: 70px;
+    margin-bottom: 0px;
+}
+
+.jumbotron.section-home .container .row .col-sm-8 h1 {
+    color: #ddd;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 24px;
+}
+
+.jumbotron.section-home .container .row .col-sm-8 h2 {
+    color: #bbb;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 10px;
+    padding-bottom: 32px;
+}
+
+.jumbotron.section-home .container .row .col-sm-8 p {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    /*line-height: 22px;*/
+    line-height: 30px;
+    color: rgba(255,255,255,.6);
+}
+
+@media (max-width: 991px) {
+
+    .jumbotron.section-home {
+        height: 180px;
+        padding-right: 10px;
+    }
+
+    .jumbotron.section-end {
+        color: #eee;
+        font-weight: bold;
+    }
+  
+    .jumbotron.section-home #photo {
+        color: #eee;
+        width: 100px;
+        height: 100px;
+        margin-left: 2px;
+        margin-top: 5px;
+    }
+
+    .jumbotron.section-home .container .row .col-xs-4 .name,
+    .jumbotron.section-home .container .row .col-xs-4 .title1,
+    .jumbotron.section-home .container .row .col-xs-4 .title {
+        font-size: 10px;
+        padding-left: 1px;
+        margin-right: -10px;
+    }
+    
+    .jumbotron.section-home .container .row .col-xs-8 h1 {
+        color: #eee;
+        font-size: 18px;
+        line-height: 16px;
+        margin: 8px 0;
+    }
+    
+    .jumbotron.section-home .container .row .col-xs-8 h2 {
+        color: #ddd;
+        font-size: 14px;
+        line-height: 6px;
+        padding-bottom: 14px;
+        margin-top: 16px;
+    }
+    
+    .jumbotron.section-home .container .row .col-xs-8 p {
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 16px;
+        margin: 6px 0;
+    }
+  
+}
+
+
+/*----------------------------------------
+SECTIONS (ABOUT, PUBLICATIONS)
+----------------------------------------*/
+
+.section-regular {
+    border-bottom: 1px solid #ddd;
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+.section-regular .container .row {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    font-weight: 100;
+    color: #333;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.section-regular .container .row span.fontawesome {
+    color: #666;
+    font-size: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+
+.section-regular .container .row a.more {
+    display: block;
+    font-family: 'Verdana', sans-serif;
+    color: #48c;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    padding-left: 40px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.section-regular .container .row p {
+    font-size: 16px;
+    color: #333;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.section-regular .container .row p span.normal {
+    color: #222;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.section-regular .container .row p span.emphasis {
+    color: #48c;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.section-regular .container .row p span.highlight {
+    color: #c12;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.section-regular .container .row .contact {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.section-regular .container .row ul li {
+    font-size: 16px;
+    color: #333;
+    padding-right: 40px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+
+.section-regular .container .row li span.fontawesome {
+    color: #666;
+    font-size: 16px;
+    padding-left: 0px;
+}
+
+.section-regular .container .row ul li span.normal {
+    color: #222;
+    font-weight: normal;
+}
+
+.section-regular .container .row ul li span.highlight {
+    color: #c12;
+    font-weight: normal;
+}
+
+.section-regular .container .row ul li span.emphasis {
+    color: #48c;
+    font-weight: normal;
+}
+
+.section-regular .container .row ul li a.link {
+    color: #48c;
+    font-weight: normal;
+}
+
+@media (max-width: 991px) {
+
+    .section-regular .container .row {
+        margin-left: 5px;
+    }
+
+    .section-regular .container .row span.fontawesome {
+        padding-left: 0px;
+    }
+
+    .section-regular .container .row p {
+        padding-left: 0px;
+    }
+
+    .section-regular .container .row .contact {
+        margin-top: 10px;
+    }
+
+    .section-regular .container .row ul li {
+        margin-left: -30px;
+    }
+  
+}
